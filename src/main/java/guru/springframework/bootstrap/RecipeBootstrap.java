@@ -125,21 +125,21 @@ public class RecipeBootstrap implements ApplicationListener<ContextRefreshedEven
                 "Adding hot oil in the batter: in the gram flour batter, you can also add 1 or 2 teaspoons of oil. This makes the onion pakoda crisp and it absorbs less oil while frying." + "/n" +
                 "Additional ingredients: You can add a variety of herbs and spices in the batter – like crushed coriander seeds, red chilli powder, red chilli flakes, ginger-garlic paste, mint leaves, ground cumin powder, coriander leaves (cilantro). ");
 
-        onionPakoraNotes.setRecipe(pakodaRecipe);
+
         pakodaRecipe.setNotes(onionPakoraNotes);
 
-        pakodaRecipe.getIngredients().add(new Ingredient("medium to large sized onions", new BigDecimal(2), eachUom, pakodaRecipe));
-        pakodaRecipe.getIngredients().add(new Ingredient("gram flour (besan) or chickpea flour", new BigDecimal(1), cupsUom, pakodaRecipe));
-        pakodaRecipe.getIngredients().add(new Ingredient("red chilli powder", new BigDecimal(.5), teaspoonUom, pakodaRecipe));
-        pakodaRecipe.getIngredients().add(new Ingredient("chopped coriander leaves – optional", new BigDecimal(1), tableSpoonUom, pakodaRecipe));
-        pakodaRecipe.getIngredients().add(new Ingredient("garam masala powder – optional", new BigDecimal(.5), teaspoonUom, pakodaRecipe));
-        pakodaRecipe.getIngredients().add(new Ingredient("turmeric powder – optional", new BigDecimal(.25), teaspoonUom, pakodaRecipe));
-        pakodaRecipe.getIngredients().add(new Ingredient("carom seeds (ajwain)", new BigDecimal(1), teaspoonUom, pakodaRecipe));
-        pakodaRecipe.getIngredients().add(new Ingredient("asafoetida (hing)", new BigDecimal(1), pinchUom, pakodaRecipe));
-        pakodaRecipe.getIngredients().add(new Ingredient("baking soda – optional", new BigDecimal(1), pinchUom, pakodaRecipe));
-        pakodaRecipe.getIngredients().add(new Ingredient("oil as required – for shallow frying or deep frying", null, eachUom, pakodaRecipe));
-        pakodaRecipe.getIngredients().add(new Ingredient("water as required to make a medium thick batter", null, eachUom, pakodaRecipe));
-        pakodaRecipe.getIngredients().add(new Ingredient("salt as required", null, eachUom, pakodaRecipe));
+        pakodaRecipe.getIngredients().add(new Ingredient("medium to large sized onions", new BigDecimal(2), eachUom));
+        pakodaRecipe.getIngredients().add(new Ingredient("gram flour (besan) or chickpea flour", new BigDecimal(1), cupsUom));
+        pakodaRecipe.getIngredients().add(new Ingredient("red chilli powder", new BigDecimal(.5), teaspoonUom));
+        pakodaRecipe.getIngredients().add(new Ingredient("chopped coriander leaves – optional", new BigDecimal(1), tableSpoonUom));
+        pakodaRecipe.getIngredients().add(new Ingredient("garam masala powder – optional", new BigDecimal(.5), teaspoonUom));
+        pakodaRecipe.getIngredients().add(new Ingredient("turmeric powder – optional", new BigDecimal(.25), teaspoonUom));
+        pakodaRecipe.getIngredients().add(new Ingredient("carom seeds (ajwain)", new BigDecimal(1), teaspoonUom));
+        pakodaRecipe.getIngredients().add(new Ingredient("asafoetida (hing)", new BigDecimal(1), pinchUom));
+        pakodaRecipe.getIngredients().add(new Ingredient("baking soda – optional", new BigDecimal(1), pinchUom));
+        pakodaRecipe.getIngredients().add(new Ingredient("oil as required – for shallow frying or deep frying", null, eachUom));
+        pakodaRecipe.getIngredients().add(new Ingredient("water as required to make a medium thick batter", null, eachUom));
+        pakodaRecipe.getIngredients().add(new Ingredient("salt as required", null, eachUom));
 
         pakodaRecipe.getCategories().add(indianCategory);
 
